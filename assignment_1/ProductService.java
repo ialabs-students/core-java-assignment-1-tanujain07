@@ -38,7 +38,7 @@ public class ProductService {
             for(Map.Entry<Integer, Product> entry:productsList.entrySet()){    
                 int key=entry.getKey();  
                 Product b=entry.getValue();  
-                if (catagory == b.getCategory()) {
+                if (catagory.equals(b.getCategory())) {
                                     product_object = b;
                                     if (temp < b.getPrice()) {
                                         temp = b.getPrice();
